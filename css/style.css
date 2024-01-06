@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 4svh;
+    z-index: 1;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4svw;
+    z-index: 1;
+}
+
+nav ul li {
+    display: inline-flex;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Rethink Sans';
+    z-index: 1;
+}
+
+a {
+    font-family: 'Roboto';
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.container .banner {
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100svh;
+    width: 100svw;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.212);
+    backdrop-filter: blur(3px);
+    width: 100svw;
+    height: 100svh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner .qoutes {
+
+    height: 65%;
+    color: rgba(241, 235, 235, 0.781);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    align-items: center;
+}
+
+.banner .qoutes h1 {
+    font-size: 6svw;
+    font-family: 'Rubik Doodle Shadow';
+}
+
+.banner .qoutes p {
+    color: rgba(241, 235, 235, 0.76);
+    font-family: 'Poppins';
+}
+
+.bannerbtns button {
+    background-color: #ffffff24;
+    border: none;
+    z-index: 1;
+    position: relative;
+    font-weight: 900;
+    color: white;
+    padding: 1.5%;
+    margin: 2% 1%;
+    border-radius: 9px;
+}
+
+
+/* ---- * ACTIVE PRODUCTS * ---- */
+
+.active-products {
+    /* background-color: red; */
+    height: 100svh;
+    padding-left: 11vh;
+    padding-top: 8vh;
+    /* padding: 8vh 11vh; */
+    font-size: 3.3vw;
+    font-family: 'Poppins';
+}
+.active-products h1{
+    width: fit-content;
+    border-bottom: 6px solid rgb(161, 161, 0);
+}
+.firstdiv,
+.seconddiv,
+.thirddiv
+{
+    margin: 10vh 0;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5vw;
+}
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7,
+.p8,
+.p9
+{
+    background: #0000006b;
+    width: 28%;
+    height: 58vh;
+    border-radius: 11px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8,
+.image9 {
+    height: 63%;
+
+}
+
+.image1 {
+    background: url(https://blog.daraz.pk/wp-content/uploads/2020/07/ABOUT-DMALL-OG.jpg) center center/cover;
+}
+
+.image2 {
+    background: url(https://blog.daraz.pk/wp-content/uploads/2020/07/ABOUT-DMALL-OG.jpg) center center/cover;    
+}
+
+.image3 {
+    background: url(https://blog.daraz.pk/wp-content/uploads/2020/07/ABOUT-DMALL-OG.jpg) center center/cover;    
+}
+
+.image4 {
+    background: url(https://blog.daraz.pk/wp-content/uploads/2020/07/ABOUT-DMALL-OG.jpg) center center/cover;    
+}
+
+.image5 {
+    background: url(https://blog.daraz.pk/wp-content/uploads/2020/07/ABOUT-DMALL-OG.jpg) center center/cover;
+    
+}
+
+.image6 {
+    background: url(https://blog.daraz.pk/wp-content/uploads/2020/07/ABOUT-DMALL-OG.jpg) center center/cover;    
+}
+
+.image7 {
+    background: url(https://blog.daraz.pk/wp-content/uploads/2020/07/ABOUT-DMALL-OG.jpg) center center/cover;    
+}
+
+.image8 {
+    background: url(https://blog.daraz.pk/wp-content/uploads/2020/07/ABOUT-DMALL-OG.jpg) center center/cover;    
+}
+
+.image9 {
+    background: url(https://blog.daraz.pk/wp-content/uploads/2020/07/ABOUT-DMALL-OG.jpg) center center/cover;
+    
+}
+
+
+.p1 p,
+.p2 p,
+.p3 p,
+.p4 p,
+.p5 p,
+.p6 p,
+.p7 p,
+.p8 p,
+.p9 p
+{
+    font-size: 1rem;
+    position: relative;
+    left: 15px;
+    color: #ffffff;
+    font-family: 'Poppins';
+}
+
+.buttons{
+    /* background-color: magenta; */
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.buttons button:nth-child(1){
+    width: 45%;
+    background: rgb(0, 140, 255);
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    height: 85%;
+    border: none;
+}
+.buttons button:nth-child(2){
+    width: 45%;
+    height: 85%;
+    background: rgb(255, 115, 0);
+    color: white;
+    border-radius: 10px;
+
+    font-weight: 900;
+    font-family: 'Poppins';
+    border: none;
+}
+.more a{
+    color: blue;
+    font-size: 1.6rem;
+    text-align: right;
+}
